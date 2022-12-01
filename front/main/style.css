@@ -55,10 +55,14 @@ hellou::before {
 
 #movie > .poly {
   position: absolute;
-  transition: left, top, border, rotate;
+  transition: left, top, border, rotate, color;
   transition-duration: 2000ms;
   transition-timing-function: cubic-bezier(0, .5, .5, .9);
   z-index: 2;
+}
+
+#movie > .poly:hover {
+  cursor: pointer;
 }
 
 #movie[data-orientation="1"] > .poly:nth-child(1) {
