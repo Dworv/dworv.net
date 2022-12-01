@@ -1,0 +1,226 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: #1A1A1A;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.headerbtn {
+  font-family: Material Icons;
+  color: #FAF9F6;
+  font-size: 200%;
+  margin-right: 2%;
+  cursor: pointer;
+}
+
+hello {
+  color: #FAF9F6;
+  font-family: 'Alexandria';
+  font-size: 200%;
+  line-height: 1.8;
+}
+
+hellou {
+  color: #FAF9F6;
+  font-family: 'Alexandria';
+  font-size: 200%;
+  line-height: 1.8;
+  position: relative;
+}
+
+hellou::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 103%;
+  height: 5px;
+  background: linear-gradient(111.3deg, #B62203 9.6%, #fac000 93.6%);
+}
+
+.headerbar {
+  width: 90vmin;
+  place-items: left;
+  border-color: red;
+  border-style: solid;
+}
+
+#movie {
+  aspect-ratio: 1/1.618;
+  width: 350px;
+  position: relative;
+  text-align: center;
+  display: inline;
+}
+
+#movie > .poly {
+  position: absolute;
+  transition: left, top, border, rotate;
+  transition-duration: 2000ms;
+  transition-timing-function: cubic-bezier(0, .5, .5, .9);
+  z-index: 2;
+}
+
+#movie[data-orientation="1"] > .poly:nth-child(1) {
+  rotate: 80deg;
+  left: 22%;
+  top: 72%;
+  border-top: 10px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-left: 130px solid #801100;
+}
+
+#movie[data-orientation="2"] > .poly:nth-child(1) {
+  rotate: 105deg;
+  left: 30%;
+  top: 70%;
+  border-top: 30px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 130px solid #801100;
+}
+
+#movie[data-orientation="3"] > .poly:nth-child(1) {
+  rotate: 80deg;
+  left: 25%;
+  top: 65%;
+  border-top: 30px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 140px solid #801100;
+}
+
+#movie[data-orientation="1"] > .poly:nth-child(2) {
+  rotate: 190deg;
+  left: 40%;
+  top: 55%;
+  border-top: 30px solid transparent;
+  border-bottom: 110px solid transparent;
+  border-left: 40px solid #B62203;
+}
+
+#movie[data-orientation="2"] > .poly:nth-child(2) {
+  rotate: 170deg;
+  left: 35%;
+  top: 55%;
+  border-top: 120px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 40px solid #B62203;
+}
+
+#movie[data-orientation="3"] > .poly:nth-child(2) {
+  rotate: 200deg;
+  left: 45%;
+  top: 56%;
+  border-top: 70px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 50px solid #B62203;
+}
+
+#movie[data-orientation="1"] > .poly:nth-child(3) {
+  rotate: -5deg;
+  left: 35%;
+  top: 50%;
+  border-top: 90px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 40px solid #D73502;
+}
+
+#movie[data-orientation="2"] > .poly:nth-child(3) {
+  rotate: 30deg;
+  left: 45%;
+  top: 50%;
+  border-top: 80px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 30px solid #D73502;
+}
+
+#movie[data-orientation="3"] > .poly:nth-child(3) {
+  rotate: -20deg;
+  left: 37%;
+  top: 50%;
+  border-top: 80px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid #D73502;
+}
+
+#movie[data-orientation="1"] > .poly:nth-child(4) {
+  rotate: -200deg;
+  left: 22%;
+  top: 47%;
+  border-top: 40px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left: 40px solid #FC6400;
+}
+
+#movie[data-orientation="2"] > .poly:nth-child(4) {
+  rotate: -170deg;
+  left: 47%;
+  top: 45%;
+  border-top: 90px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 40px solid #FC6400;
+}
+
+#movie[data-orientation="3"] > .poly:nth-child(4) {
+  rotate: -155deg;
+  left: 47%;
+  top: 45%;
+  border-top: 40px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left: 45px solid #FC6400;
+}
+
+#movie[data-orientation="1"] > .poly:nth-child(5) {
+  rotate: deg;
+  left: 43%;
+  top: 44%;
+  border-top: 50px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left: 45px solid #FF7500;
+}
+
+#movie[data-orientation="2"] > .poly:nth-child(5) {
+  rotate: -15deg;
+  left: 36%;
+  top: 40%;
+  border-top: 80px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 45px solid #FF7500;
+}
+
+#movie[data-orientation="3"] > .poly:nth-child(5) {
+  rotate: 65deg;
+  left: 27%;
+  top: 50%;
+  border-top: 40px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 120px solid #FF7500;
+}
+
+#movie[data-orientation="1"] > .poly:nth-child(6) {
+  rotate: 167deg;
+  left: 30%;
+  top: 40%;
+  border-top: 80px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 45px solid #FAC000;
+}
+
+#movie[data-orientation="2"] > .poly:nth-child(6) {
+  rotate: 200deg;
+  left: 40%;
+  top: 38%;
+  border-top: 80px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid #FAC000;
+}
+
+#movie[data-orientation="3"] > .poly:nth-child(6) {
+  rotate: 210deg;
+  left: 43%;
+  top: 37%;
+  border-top: 70px solid transparent;
+  border-bottom: 70px solid transparent;
+  border-left: 47px solid #FAC000;
+}
