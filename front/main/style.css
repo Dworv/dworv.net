@@ -8,14 +8,6 @@ body {
   overflow: hidden;
 }
 
-.headerbtn {
-  font-family: Material Icons;
-  color: #FAF9F6;
-  font-size: 200%;
-  margin-right: 2%;
-  cursor: pointer;
-}
-
 hello {
   color: #FAF9F6;
   font-family: 'Alexandria';
@@ -41,10 +33,16 @@ hellou::before {
 }
 
 .headerbar {
-  width: 90vmin;
+  width: 80%;
   place-items: left;
-  border-color: red;
-  border-style: solid;
+}
+
+.headerbtn {
+  font-family: Material Icons;
+  color: #FAF9F6;
+  font-size: 200%;
+  margin-right: 2%;
+  cursor: pointer;
 }
 
 #movie {
