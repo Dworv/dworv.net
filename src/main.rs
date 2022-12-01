@@ -17,7 +17,5 @@ fn script() -> rocket::response::content::RawJavaScript<String> {
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build()
-    .mount("/", routes![home, style, script])
-    .configure(rocket::Config::build())
+    rocket::build().mount("/", routes![home, style, script])
 }
